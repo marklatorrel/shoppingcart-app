@@ -11,10 +11,10 @@ import cabbagepic from './cabbage.png';
 
   // simulate getting products from DataBase
   const products = [
-    { name: "Apples_:", country: "Italy", cost: 3, instock: 10 },
-    { name: "Oranges:", country: "Spain", cost: 4, instock: 3 },
-    { name: "Beans__:", country: "USA", cost: 2, instock: 5 },
-    { name: "Cabbage:", country: "USA", cost: 1, instock: 8 },
+    { name: "Apples", country: "Italy", cost: 3, instock: 10 },
+    { name: "Oranges", country: "Spain", cost: 4, instock: 3 },
+    { name: "Beans", country: "USA", cost: 2, instock: 5 },
+    { name: "Cabbage", country: "USA", cost: 1, instock: 8 },
   ];
   
   //=========Cart=============
@@ -127,7 +127,7 @@ let list = items.map((item, index) => {
     <li key={index}>
       <Image src={photos[index % 4]} width={70} roundedCircle></Image>
       <Button variant="primary" size="large">
-        {item.name}:{item.cost}
+        {item.name} Price: {item.cost}
       </Button>
       <input name={item.name} type="submit" onClick={addToCart}></input>
     </li>
